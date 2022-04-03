@@ -1,0 +1,8 @@
+1-home (aya ashraf ahmed)
+2-sign in (isaac)
+3-categories  (basmala)
+4-cart & ordered items(aya mahmoud)
+5-products details (aya ashraf mohamed)
+6-profile (2 views) (bassem)
+8-Feedback & support (isaac)
+9-wish list (aya galal)
