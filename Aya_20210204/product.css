@@ -1,0 +1,66 @@
+*{
+    --main-color:#16558f;
+    --secondery-color: #0583d2;
+    --third-color: #eee;
+}
+.laptop,
+.tv,.mopile,
+.washingMachine{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px;  
+    width: 100%; 
+    background-color: var(--third-color);
+    border: solid 5px white;
+}
+.laptop img,.tv img{
+    width: 300px; 
+    height: 180px;
+    
+} 
+ .washingMachine img{
+     width: 200px;
+     height:250px ;
+ }
+.mopile img,.access img{
+    width: 150px;
+    height: 200px;
+}
+ h3{
+    color: var(--main-color);
+    margin-left: 5px;
+}
+ .info{
+    line-height: 1.4;
+    border: 10px solid var(--third-color);  
+    background-color: rgb(241, 237, 237); 
+}
+.info p{
+    font-size: 16px;
+    margin-left: 20px; 
+}
+.info .price{
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--main-color);
+    display: flex;
+}
+.info .details{
+    color: var(--secondery-color);
+}
+ input{
+    background-color: var(--main-color);
+    width: 180px;
+    height: 10px;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    line-height: 5px;
+    color: #b8e3ff;
+    border-radius: 40px;
+    position: relative;   
+}
+ 
