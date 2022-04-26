@@ -1,16 +1,3 @@
-/* Variables */
-
-:root{
-    --main-color: #16558f;
-    --secondary-color: #b8e3ff;
-    --third-color: #0583D2;
-    --fourth-color: #61B0B7;
-    --light-grey: #eee;
-    --dark-grey: #ddd;       
-    --v-dark-grey: #ccc;
-    --m-dark-grey: #868c96; 
-}
-
 /* Global Rules */
 
 * {
