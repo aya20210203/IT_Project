@@ -48,7 +48,7 @@ function toTheme1 (){
     document.documentElement.style.setProperty("--dark-grey", "#ddd");
     document.documentElement.style.setProperty("--v-dark-grey", "#ccc");
     document.documentElement.style.setProperty("--m-dark-grey", "#868c96");
-    document.documentElement.style.fontFamily = "serif";
+    document.documentElement.style.fontFamily = "'Work Sans', sans-serif";
     window.localStorage.theme = 1;
 }
 
