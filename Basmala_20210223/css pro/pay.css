@@ -5,8 +5,7 @@ section{
 h2{
     text-transform: capitalize;
     color: var(--main-color);
-    position: relative;
-    left: 165px;
+   text-align: center;
     font-size: 45px
 
 }
@@ -37,19 +36,21 @@ form{
 span{
     vertical-align: middle;
 }
-button{
-    background-color: var(--secondary-color);
-    color:black;
+button.butt{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
     border-radius: 15px;
     text-transform: capitalize;
     cursor: pointer;
+    width: 75px;
+    height: 40px;
 }
 
 .to{
 
     border:2px solid black ;
     outline: none;
-    height: 20px;
+    height: 25px;
 }
 body{
     background-color: var(--light-grey);
@@ -61,19 +62,21 @@ body{
     color: var(--main-color);
 }
 .end{
-    background-color: var(--secondary-color);;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
     width: 500px;
-    height: 50px;
+    height: 65px;
     text-transform: uppercase;
     font-size: 20px;
+    border-radius: 25px;
 }
-.b{
+.confir{
     position: relative;
     top: 150px;
     left: 200px;
 }
 button:hover { 
-    opacity: 0.8;
+    transform: scale(1.1);
 
 }
 .addlen{
@@ -92,4 +95,8 @@ button:hover {
 #messag{
     margin-left: 125px;
     font-size: 25px;
+}
+#vouc{
+    position: relative;
+    top: 8px;
 }

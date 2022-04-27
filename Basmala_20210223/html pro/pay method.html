@@ -43,7 +43,7 @@
               <div class="card">
                 <span><img src="https://static.jumia.com.eg/cms/Hany_Logos/PNg24.png" alt=""> </span>
                 <p class="c">pay by card</p>
-                <button type="button"id=add>add card</button>
+                <button type="button"id=add class="butt">add card</button>
                 <div class="addcard" id="hid" style="display:none">
                     <div class="addlen" >
                       <label class="lab">Card number</label>
@@ -55,10 +55,10 @@
                     </div>
                     <div class="addlen">
                         <label class="lab">Expiration date</label>
-                        <input  class="to" type="date" name="c.d">
+                        <input  class="to" type="data" name="c.d">
                     </div>
                     <div>
-                        <button> send</button>
+                        <button class="butt" >submit</button>
                     </div>  
                 </div> 
               </div>
@@ -95,19 +95,19 @@
                     <div id="phon"style="display:none">
                         <label class="lab">phone</label>
                         <input type="text" name="phone" class="to">
-                        <button>send</button>
+                        <button class="butt">send</button>
                     </div>
                
               </div>
               <hr>
               <div class="coupon">
                   <p class="cou">do you have a voucher?</p>
-                <input type="text" name="pay" class="to" placeholder="Enter coupon code here">
-                <button >
+                <input type="text" name="pay" id="vouc" class="to" placeholder="Enter coupon code here">
+                <button class="butt" >
                     <span class="label">add voucher</span>
                 </button>
               </div>
-              <div class="b">
+              <div class="confir">
                 <button class="end">
                   confirm order
                 </button>
