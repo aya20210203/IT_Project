@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Shopping</title>
+    <link rel="stylesheet" href="cart.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../../Aya_20210207/css/theme2.css">
+    <link rel="stylesheet" href="../../Aya_20210203/CSS/theme1.css" >
+</head>
+<body>
+
+
+
+    <!-- header -->
+    <header id="themeOne">
+        <div class="logo">INFINITY&nbsp;STORE</div>
+        <div class="menu" id="menu">
+            <i class="fa-solid fa-bars bar"></i>
+        </div> 
+        <nav>
+            <a href="../../index.html"><i class="fa-solid fa-house"></i>Home Page</a>
+            <a href="../../Aya_20210207/search.html"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+            <a href="../../myAccount.html"><i class="fa-solid fa-user"></i>My Account</a>
+            <a href="../../Isaac_20210145/"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a>  
+            <a href="../../Aya_20210204/help/help.html"><i class="fa-solid fa-circle-question"></i>Help</a> 
+        </nav>
+    </header>
+    <div class="header" id="themeTwo" style="display: none;">
+                
+        <a href="#" class="logo">Infinity Store</a>
+        <ul class="navigation">
+            <li><a href="../../index.html">Home Page</a></li>
+            <li><a href="../../Aya_20210207/search.html">Search</a></li>
+            <li><a href="../../myAccount.html">My Account</a></li>
+            <li><a href="../../Isaac_20210145/">Login</a></li>
+            <li><a href="../../Aya_20210211/Shopping_cart/Cart.html">Cart</a></li>
+            <li><a href="../../Aya_20210204/help/help.html">Help</a></li>
+        </ul>
+    </div>
+    <button id="changeTheme"><i class="fa-solid fa-brush"></i></button>
+    
+    <!-- End of header -->
+  
+        <!-- cart item details -->
+        <div class="name">
+            <span class="text">Shopping Cart</span>
+            <i class="fa-solid fa-cart-shopping" id="cartIcon" ></i>
+            
+            
+        </div> 
+
+    <div class="samll-container cart-page">
+        <table>
+             
+            <tr>
+                <th>Product</th>
+                <th>Remove</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+        <div class="cart_items">
+            <tr>
+            <div class="cart_row">
+                <td>
+                    <div class="cart-info">
+                        <img src="Iphone.jpg" >
+                        <div>
+                            <p>Ipone 13 pro max</p>
+                            <span style="font-size: small; padding-bottom: 5px;">Price :</span>
+                            <input type="number" id="Cart_price" value="23.000" style="height: 30px; width: 65px;" readonly>
+                        </div>
+
+                    </div>
+                </td>
+                <div>
+                <td>
+                    <div class="button">
+                    <i class="fa-solid fa-trash-can"></i>
+                    <span class="buuton">Remove</span>
+                    </div>
+                </td>
+                <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                <td id="subtotall" >23.000</td>
+                </div>
+            </div>
+            </tr>
+
+
+            <!-- repeat cart products -->
+
+            <tr>
+                
+                <div class="cart_row">
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/71IlDSwE3+L._AC_SL1500_.jpg" >
+                            <div>
+                                <p>Asus ZenBook</p>
+                                <span style="font-size: small; padding-bottom: 5px;">Price :</span>
+                                <input type="number" id="Cart_price" value="15.000" style="height: 30px; width: 65px;" readonly >
+                            </div>
+                        </div>
+                    </td>
+                    <div>
+                    <td>
+                        <div class="button">
+                        <i class="fa-solid fa-trash-can"></i>
+                        <span class="buuton">Remove</span>
+                        </div>
+                    </td>
+                    <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                    <td id="subtotall" >15,550</td>
+                    </div>
+                </div>
+                </tr>
+           
+     
+            <!-- End repeat of cart products -->
+
+        </div> 
+        </table>
+        <br>
+
+        <div class="total-price">
+            <table>
+                <!-- <tr> 
+                    <td >Subtotal</td>
+                    <td >69.000</td>
+                </tr>
+                <tr> 
+                    <td>Tax</td>
+                    <td>35.00</td>
+                </tr> -->
+                <tr> 
+                    <td>Total</td>
+                    <td class="TotalPrice">0.000</td>
+                </tr>
+               
+            </table>
+            <br>            
+        </div>
+        <div class="checkbutton">
+            <a class="checkout" href="#"> Buy Now</a>
+        </div>
+    </div>
+
+      <!-- footer -->
+      <footer id="footerOne">
+        <div class="text">Join Us</div>
+        <div class="social">
+            <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a> 
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a> 
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a> 
+        </div>
+        <p>&copy; 2022 <span>INFINITY STORE</span> All Rights Reserved</p> 
+        <div class="feedback">
+            <a href="../feedback&support/feed.html">feedback & support</a>
+        </div> 
+    </footer>
+    <div class="footer" id="footerTwo" style="display: none;">
+                
+        <div class="container">
+            <div class="cloumn">
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>    
+                </div>
+                <div class="footer-bottom">
+                    <p>copyright &copy;2022 infinity store ALL RIGHTS RESERVED</p>
+                    <a href="../feedback&support/feed.html">feedback & support</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- End of footer -->
+
+<script src="../../Aya_20210203/JS/main.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>
