@@ -1,6 +1,3 @@
-//Header link
-$("#header").load("Bassem_20210216/header.html");
-
 //on scroll
 let scrollBtn=document.querySelectorAll(".scroll");
 window.onscroll=function(){
