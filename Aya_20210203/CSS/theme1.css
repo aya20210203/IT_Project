@@ -140,7 +140,6 @@ header .menu {
 #changeTheme {
     border: 1px solid var(--main-color);
     background-color: var(--secondary-color);
-    color: var(--main-color);
     cursor: pointer;
     position: absolute;
     top: 5px;
@@ -152,6 +151,9 @@ header .menu {
     -moz-border-radius: 10%;
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
+}
+#changeTheme i {
+    color: var(--main-color);
 }
 footer {
     padding: 20px;

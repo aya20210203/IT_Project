@@ -19,6 +19,7 @@ body{
 }
 .container{
     position: relative;
+    top: 30px;
     /* width: 360px; */
     background: black;
     box-shadow: 0 0 8px rgba(250, 250, 250, 0.6);
