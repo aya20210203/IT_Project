@@ -1,0 +1,61 @@
+/* body {
+    background-image: url('feedd.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  } */
+
+  :root{
+    --main-color:#16558f;
+    --third-color:#0583D2 ;
+}
+
+
+.container{
+    text-align: center;
+}
+
+.name{
+    display: inline;
+}
+.mail{
+    display: inline;
+}
+.phone{
+    display: inline;
+}
+.message{
+    display: inline;
+}
+.radio-inline{
+    margin: 0px 40px 20px 0px;
+    cursor: pointer;
+
+}
+
+label{
+    color:var(--main-color);
+}
+.row{
+    text-align: center;
+}
+.container{
+    color: var(--main-color);
+}
+
+
+.Submit-button{
+    display: inline-block;
+    text-align: center;
+    width: 70px;
+    height: 40px;
+   line-height: 35px;
+   background-color: var(--main-color);
+   color: white;
+}
+
+.Submit-button:hover{
+    cursor: pointer;
+    font-size :14px;
+    border: 2px solid white;
+}

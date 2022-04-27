@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,100&display=swap');
+
+/* Global Rules */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+}
+
+/* main */
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: var(--main-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 50px;
+    z-index: 5000;
+}
+header .logo {
+    display: inline-block;
+    font-size: 20px;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 10px var(--secondary-color);
+}
+header nav {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+header nav a {
+    padding: 5px;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+    margin: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    font-size: 15px;
+}
+@media (max-width: 825px) {
+    header nav a {
+        width: 80px;
+        font-size: 13px;
+    }
+}
+header nav a i {
+    font-size: 25px;
+    color: var(--main-color);
+}
+header nav a:hover {
+    opacity: 0.7; 
+}
+header .menu {
+    display: none;
+}
+@media (max-width: 767px){
+    header {
+        padding: 0% 12%;
+    }
+    header .menu {
+        display: block;
+        position: relative;
+        margin-left: 58%;
+        cursor: pointer;
+        position: relative;
+        right: 10px;        
+    }
+    header .menu i {
+        font-size: 40px;
+        color: var(--secondary-color);
+    } 
+    header .logo {
+        margin-right: 30px;
+    }
+    header nav {
+        display: none;
+        flex-direction: column;
+        position: relative;
+        background-color: var(--secondary-color);
+        top: 208px;
+        right: 115px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5%;
+        -webkit-border-radius: 5%;
+        -moz-border-radius: 5%;
+        -ms-border-radius: 5%;
+        -o-border-radius: 5%;
+        border: 2px solid var(--main-color);
+        z-index: 1;
+    }
+    header nav::before {
+        content: "";
+        position: absolute;
+        border-width: 10px;
+        border-style: solid;
+        top: -19px;
+        right: 10px;
+        border-color: transparent transparent var(--secondary-color) transparent;
+    }
+    header nav a {
+        position: relative;
+        padding: 5px 10px;
+        width: 95px;
+    }
+    header nav a:hover {
+        text-shadow: 2px 2px 5px var(--main-color);
+    }
+    header nav a::after {
+        content: "";
+        position: absolute;
+        bottom: 1px;
+        left: 0px;
+        width: 100%;
+        height: 1px;
+        background-color: var(--main-color);
+    }
+} 
+@media (max-width: 500px) {
+    header .menu {
+        margin-left: 30%;
+    }
+}
+#changeTheme {
+    border: 1px solid var(--main-color);
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    padding: 5px;
+    font-size: 40px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+    background: var(--main-color);
+}
+
+.header .logo{
+    position: relative;
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.header .navigation{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.header .navigation li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.header .navigation li a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.header .navigation li a:hover{
+    color: black;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+}
