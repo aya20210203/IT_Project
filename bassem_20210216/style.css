@@ -1,0 +1,422 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --maincolor: #16558f; 
+    --secondarycolor: #B8E3FF;
+    --thirdcolor: #61B0b7;
+    --fourthcolor:#0583D2;
+    --White:white; 
+    --grey:rgb(230,230,230);
+    --lightgrey:rgb(200,200,200);
+    --darkgrey:rgb(186, 186, 186);
+} 
+
+.material-icons{
+    color:white;
+    padding: 5px;
+}
+
+article{
+    background-color: var(--grey);
+    min-height: 100vh;
+}
+
+#header{
+    position: fixed;
+    font-size: 2.5vh;
+}
+
+/* ----------On scroll-----------  */
+.scroll{
+    background-color: var(--grey);
+    display: none;
+    position: fixed;
+    border-radius: 30px;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: var(--darkgrey);
+    z-index: 1003;
+    bottom: 40px;
+    right: 40px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    user-select: none;
+}
+
+.scroll span{
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* ----------my Top bar-----------  */
+/* .header{
+    background-color: var(--maincolor);
+    width: 100%;
+    height:8vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.tabs .homeIcon{
+    display: none;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 3vh;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: 0.4s ease;
+    text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo a:hover{
+    color : var(--secondarycolor);
+}
+
+.tabs{
+    display: flex;
+    justify-content:center;
+    align-content: center;
+}
+
+.tabs a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    font-size: 3vh;
+    padding: 0 2vh;
+    transition: 0.4s ease;
+    text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.tabs a:hover{
+    color : var(--secondarycolor);
+} */
+
+/* ------------------ left side bar --------------------- */
+.pages{
+    width :250px;
+    height :100vh;
+    background-color:var(--White);
+    padding-top: 14vh; /* 8vh top bar + 2vh padding*/
+    padding-left: 1vh;
+    padding-right: 0vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content:flex-end;
+    position: fixed;
+    z-index: 999;
+}
+
+.pages a{
+    color: var(--main-color);
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    user-select: none;
+    text-align: center;
+    align-items:center;
+    justify-items: center;
+    padding: 2vh 3.5vh ;
+    margin: 1.5vh 0;
+    border-radius: 250px 0px 0px 250px;
+    font-size: 2.8vh;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    transition: 0.5s ease;
+}
+
+.pages a:hover{
+    background-color: var(--lightgrey);
+    cursor: pointer;
+}
+
+.pages .material-icons{
+    color: var(--main-color);
+}
+
+/* ----------------------Overview Page content--------------------------- */
+
+.myAccountPage{
+    background-color: var(--grey);
+    padding-top: 13vh; 
+    padding-left:235px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    justify-content: flex start;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.myAccountPage .box{
+    background-color: white;
+    width: 90%;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding : 20px;
+    overflow: auto;
+}
+
+hr{
+    margin: 15px 0;
+}
+
+.BoxTitle{
+    display: flex;
+    flex-direction: row;
+    padding:5px 0;
+}
+
+.BoxTitle h4{
+    width: 50%;
+}
+
+.SecondBoxTitle{
+    padding-left: 1%;
+}
+
+.UpperBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LowerBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.LowerBox input{
+    background-color: var(--grey);
+    color: rgb(121, 121, 121);
+    width: 49%;
+    height: 45px;
+    padding: 0 5px;
+    pointer-events:none;
+    font-size: 2.5vh;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.box h3{
+    background-color: var(--main-color);
+    color: white;
+    padding :8px;
+    margin:1px;
+    font-size: 3vh;
+    border-radius: 4px 4px 4px 4px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.box h3:hover{
+    padding: 9px;
+    margin:0;
+    font-size: 3.1vh;
+    cursor: pointer;
+}
+
+#address{
+    width:100%;
+}
+
+/* --------------------------Recently viewed----------------------------- */
+
+h2{
+    color: var(--main-color);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.view{
+    height: 8vh;
+    width:100%;
+    padding: 20px 0 10px 53px ;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-start;
+    transition: 0.5s ease;
+}
+
+.view button{
+    padding:5px 5px;
+    margin-left: 10px;
+}
+
+#view2{
+    margin-right: 40px;
+
+}
+
+#rv_content{
+    display:none;
+    padding-left:270px;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    width:100%;
+}
+
+.boxes .box{
+    width:97%;
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box img{
+    top:50%;
+    margin: 5px 15px;
+    max-width: 155px;
+    max-height: 160px;
+}
+
+.desc{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width:60%;
+}
+.desc p{
+    padding:10px;
+}
+
+.PriceAndButton{
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    border-width: 0 0 0 1px;
+    border-color: var(--lightgrey);
+    border-style:solid;
+}
+
+.PriceAndButton h3{
+    user-select: none;
+}
+
+/* ----------------------------Media Querey------------------------------ */
+@media(max-width:770px){
+
+    #rv_content{
+        padding-left: 20px;
+    }
+    
+    .tabs .homeIcon{
+        display: flex;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .tabs p{
+        display: none;
+    }
+
+    .pages{
+        padding-top: 130px;
+        padding-left: 0;
+        background-color: var(--grey);
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        overflow: auto;
+        width:100%;
+        height: 5vh;
+    }
+
+    .pages a{
+        padding:10px;
+        background-color: white;
+        border-radius: 0 0 25px 25px;
+        justify-content: center;
+    }
+
+    .pages a p{
+        display: none;
+    }
+
+    .myAccountPage{
+        padding: 120px 5px 10px 5px;
+    }
+
+    .header{
+        justify-content: space-around;
+    }
+}
+
+@media(max-width:915px){
+    .boxes .box{
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .PriceAndButton{
+        border-style: none;
+    }
+
+    .desc{
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        padding: 5px;
+    }
+
+    .view{
+        display: none;
+    }
+
+}

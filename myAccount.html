@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bassem_20210216/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>My Account</title>
+</head>
+
+<body>    
+    <!-- Website Header 1 -->
+    <header id="header"></header>
+
+    <!-- Website Header 2 -->
+    <!-- <header class="header">
+        <div class="logo">
+            <a href="#">Infinity Store</a>
+        </div>
+        <div class="tabs">
+            <a href="#" class="homeIcon">
+                <span class="material-icons">home</span>
+            </a>
+            <a href="" target="_blank">
+                <span class="material-icons">account_circle</span>
+                <p>My Account</p>
+            </a>
+            <a href="#">
+                <span class="material-icons">category</span>
+                <p>Categories</p>
+            </a>
+            <a href="#">
+                <span class="material-icons">add_shopping_cart</span>
+                <p>Cart</p>
+            </a>
+            <a href="#">
+                <span class="material-icons">logout</span>
+                <p>Log Out</p>
+            </a>
+        </div>
+    </header> -->
+    
+    <!-- Website left aside -->
+    <aside class="pages">
+        <a id="ao_view">
+            <span class="material-icons">account_circle</span>
+            <p>Account Overview</p>
+        </a>
+        <a>
+            <span class="material-icons">payment</span>
+            <p>Payment Methods</p>
+        </a>
+        <a href="#">
+            <span class="material-icons">favorite</span>
+            <p>Wishlist</p>
+        </a>
+        <a href="#">
+            <span class="material-icons">fact_check</span>
+            <p>Orders</p>
+        </a>
+        <a id="rv_view">
+            <span class="material-icons">visibility</span>
+            <p>recently Viewed</p>
+        </a>
+        <a>
+            <span class="material-icons">contact_support</span>
+            <p>Contact Us</p>
+        </a>
+    </aside>
+
+    <!-- Account Overview Section -->
+    <article class="myAccountPage" id="ao_content">
+        <!-- Scroll -->
+        <div class="scroll">
+            <span class="material-icons">expand_less</span>
+        </div>
+        <!-- Name -->
+        <div class="box">
+            <div class="UpperBox">
+                <h2>Name</h2>
+                <h3 id="name_edit_button">Edit</h3>
+            </div>
+            <hr>
+            <div class="BoxTitle">
+                <h4>First name</h4>
+                <h4 class="SecondBoxTitle">Last name</h4>
+            </div>
+            <div class="LowerBox">
+                <input type="text" value="Bassem" id="name1" >
+                <input type="text" value="Saeed" id="name2" >
+            </div>
+        </div>
+        <!-- Email -->
+        <div class="box">
+            <div class="UpperBox">
+                <h2>Email</h2>
+                <h3 id="email_edit_button">Edit</h3>
+            </div>
+            <hr>
+            <div class="BoxTitle">
+                <h4>Primary</h4>
+                <h4 class="SecondBoxTitle">Secondary</h4>
+            </div>
+            <div class="LowerBox">
+                <input type="email" value="bassemsaeed620@gmail.com" id="email1">
+                <input type="email" value="bassemsaeed710@gmail.com" id="email2">
+            </div>
+        </div>
+        <!-- Phone -->
+        <div class="box">
+            <div class="UpperBox">
+                <h2>Phone</h2>
+                <h3 id="phone_edit_button">Edit</h3>
+            </div>
+            <hr>
+            <div class="BoxTitle">
+                <h4>Primary</h4>
+                <h4 class="SecondBoxTitle">Secondary</h4>
+            </div>
+            <div class="LowerBox">
+                <input type="number" value="01281441143" id="phone1">
+                <input type="number" value="01119697361" id="phone2">
+            </div>
+        </div>
+        <!-- Address -->
+        <div class="box">
+            <div class="UpperBox">
+                <h2>Address</h2>
+                <h3 id="address_edit_button">Edit</h3>
+            </div>
+            <hr>
+            <div class="LowerBox">
+                <input type="text" value="53 10thDistrict - October City" id="address">
+            </div>
+        </div>
+    </article>
+
+    <!-- Recently viewed article -->
+    <article class="myAccountPage" id="rv_content">
+        <!-- Scroll -->
+        <div class="scroll">
+            <span class="material-icons">expand_less</span>
+        </div>
+        <!-- View section -->
+        <section class="view">
+            <h4>View : </h4>
+            <button id="view1">View 1</button>
+            <button id="view2">View 2</button>
+            <h4 id="items"></h4>
+        </section>
+        <!-- All boxes -->
+        <section class="boxes" id="boxes">
+            <!-- Box 1 -->
+            <section class="box" id="box1" >
+                <div class="image">
+                <img src="Bassem_20210216/img/ideapadgaming3.jpg" >
+                </div>
+                <div class="desc">
+                    <h2>Lenovo Ideapad Gaming 3</h2>
+                    <p>
+                        Ryzen 7 4800h , 8-Cores (16-Threads)<br>
+                        Full-HD 15.6 Inches screen (120Hz)<br>
+                        HDD 1TB , SSD M.2 nVMe 256GB
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>20,000</h2>
+                    <h3 id="AddToCart1" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 2 -->
+            <section class="box">
+                <div class="image" id="box2">
+                <img src="Aya_20210204/product/images/71IlDSwE3+L._AC_SL1500_.jpg" >
+                </div>
+                <div class="desc" id="box2_2">
+                    <h2>Asus ZenBook</h2>
+                    <p>
+                        2022 ASUS L510 Ultra Thin Laptop, 15.6" FHD Display,<br>
+                        Intel Celeron N4020 Processor, 4GB RAM, 512 GB Storage,<br>
+                        8Hrs+ Battery Life, Backlit Keyboard, Windows 10 Home <br> 
+                        1 Year Microsoft 365, Star Black
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>15,550</h2>
+                    <h3 id="AddToCart2" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 3 -->
+            <section class="box">
+                <div class="image" id="box3">
+                <img src="Aya_20210204/product/images/61S+-V9lowL._AC_SL1346_.jpg" >
+                </div>
+                <div class="desc" id="box3_3">
+                    <h2>HP Laptop</h2>
+                    <p>
+                        HP 17.3" HD+ Display, 11th Gen Intel Core i3-1115G4(Up to 4.1GHz,<br>
+                        Beat i5-1030G7), 16GB DDR4 RAM, 1TB HDD+256GB PCIe SSD,<br>
+                        Bluetooth, HDMI, Webcam, Windows 11, Silver.
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>17,000</h2>
+                    <h3 id="AddToCart3" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 4 -->
+            <section class="box">
+                <div class="image" id="box4">
+                <img src="Aya_20210204/product/images/71xX9l5+pgL._AC_SL1260_.jpg" >
+                </div>
+                <div class="desc" id="box4_4">
+                    <h2>Apple MacBook Pro</h2>
+                    <p>
+                        Apple MacBook Pro MF841LL/A 13.3-Inch Laptop ,<br>
+                        (Intel Core i5 512GB 8 GB DDR3 SDRAM, Mac OS X)<br>
+                        Silver
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>25,550</h2>
+                    <h3 id="AddToCart4" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 5 -->
+            <section class="box">
+                <div class="image" id="box5">
+                <img src="Aya_20210204/product/images/41S+QGLrm0L._AC_SX569_.jpg" >
+                </div>
+                <div class="desc" id="box5_5">
+                    <h2>Lenovo IdeaPad 3i</h2>
+                    <p>
+                        15.6" FHD screen,<br>
+                        Intel Core i3-1115G4(up to 4.1GHz),<br>
+                        20GB RAM, 512GB NVMe SSD, Webcam, Bluetooth, Windows 11 S, Blue<br>
+                    </p>
+                </div>
+                <div class="PriceAndButton" >
+                    <h2>26,550</h2>
+                    <h3 id="AddToCart5" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 6 -->
+            <section class="box" >
+                <div class="image" id="box6">
+                <img src="Aya_20210204/product/images/91n+0a65XFL._AC_SX679_.jpg" >
+                </div>
+                <div class="desc" id="box6_6">
+                    <h2>LG OLED C1</h2>
+                    <p>
+                        LG OLED C1 Series 55” Alexa Built-in 4k Smart TV (3840 x 2160),
+                        120Hz Refresh Rate, AI-Powered 4K, Dolby Cinema,
+                        WiSA Ready, Gaming Mode (OLED55C1PUB, 2021)
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>13.980</h2>
+                    <h3 id="AddToCart6" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 7 -->
+            <section class="box">
+                <div class="image" id="box7">
+                <img src="Aya_20210204/product/images/81a3EBam-yL._AC_SX679_.jpg" >
+                </div>
+                <div class="desc" id="box7_7">
+                    <h2>Samsung TV</h2>
+                    <p>
+                        SAMSUNG 65-Inch Class Neo QLED 8K QN900A Series
+                        8K UHD Quantum HDR 64x Smart TV with Alexa Built-in.
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>74,999</h2>
+                    <h3 id="AddToCart7" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 8 -->
+            <section class="box">
+                <div class="image" id="box8">
+                <img src="Aya_20210204/product/images/91KZbi-CbzL._AC_SX679_.jpg" >
+                </div>
+                <div class="desc" id="box8_8">
+                    <h2>Sony X90J</h2>
+                    <p>
+                        Sony X90J 65 Inch TV: BRAVIA XR Full Array
+                        LED 4K Ultra HD Smart Google TV with Dolby Vision<br>
+                        HDR and Alexa Compatibility 2021 Model
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>11,990</h2>
+                    <h3 id="AddToCart8" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 9 -->
+            <section class="box">
+                <div class="image" id="box9">
+                <img src="Aya_20210204/product/images/81Y8IwejYBL._AC_SX679_.jpg" >
+                </div>
+                <div class="desc" id="box9_9">
+                    <h2>VIZIO M6 Series</h2>
+                    <p>
+                        VIZIO 70-Inch M6 Series Premium 4K UHD Quantum Color<br>
+                        LED HDR Smart TV with Apple AirPlay and Chromecast Built-in,<br>
+                        Dolby Vision, HDR10+, HDMI 2.1, Variable Refresh Rate, 2021 Model
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>99,999</h2>
+                    <h3 id="AddToCart9" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 10 -->
+            <section class="box">
+                <div class="image" id="box10">
+                <img src="Aya_20210204/product/images/712iry8nIYL._AC_SX679_.jpg" >
+                </div>
+                <div class="desc" id="box10_10">
+                    <h2>SAMSUNG Galaxy S20</h2>
+                    <p>
+                        SAMSUNG Galaxy S20 FE 5G Factory Unlocked<br>
+                        Android Cell Phone 128GB US Version Smartphone<br>
+                        Pro-Grade Camera 30X Space Zoom Night Mode, Cloud Mint Green
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>5,000</h2>
+                    <h3 id="AddToCart10" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 11 -->
+            <section class="box">
+                <div class="image" id="box11">
+                <img src="Aya_20210204/product/images/71GfkO58E2L._AC_SX679_.jpg" >
+                </div>
+                <div class="desc" id="box11_11">
+                    <h2>Oppo A54 Dual-SIM</h2>
+                    <p>
+                        Oppo A54 Dual-SIM 64GB ROM + 4GB RAM (GSM Only | No CDMA)<br>
+                        Factory Unlocked 5G Smartphone (Fluid Black)
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>6,900</h2>
+                    <h3 id="AddToCart11" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 12 -->
+            <section class="box">
+                <div class="image" id="box12">
+                <img src="Aya_20210204/product/images/71DCZOdq92S.__AC_SX300_SY300_QL70_FMwebp_.webp" >
+                </div>
+                <div class="desc" id="box12_12">
+                    <h2>OnePlus Nord N200</h2>
+                    <p>
+                        5G Unlocked Android Smartphone U.S Version<br>
+                        | 6.49" Full HD+LCD Screen | 90Hz Smooth Display | Large 5000mAh Battery | Fast Charging |
+                        64GB Storage | Triple Camera,Blue Quantum
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>3,800</h2>
+                    <h3 id="AddToCart12" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 13 -->
+            <section class="box">
+                <div class="image" id="box13">
+                <img src="Aya_20210204/product/images/61P5dEhFIrL._AC_SX679_.jpg" >
+                </div>
+                <div class="desc" id="box13_13">
+                    <h2>iphone 11 cover</h2>
+                    <p>
+                        ESR Air Armor Compatible with iPhone 11 Case [Military Grade Drop Protection]<br>
+                        [Shock-Absorbing] [Anti-Yellowing Hard Back] [Scratch Resistant], 6.1-Inch, Clear
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>159</h2>
+                    <h3 id="AddToCart13" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 14 -->
+            <section class="box">
+                <div class="image" id="box14">
+                <img src="Aya_20210204/product/images/51XQk2-ST2L._AC_SX679_.jpg" >
+                </div>
+                <div class="desc" id="box14_14">
+                    <h2>COMFEE Portable Washing Machine</h2>
+                    <p>
+                        COMFEE' Portable Washing Machine, 0.9 cu.ft Compact Washer With LED Display, 5 Wash Cycles,
+                        2 Built-in Rollers, Space Saving Full-Automatic Washer, Ideal Laundry for RV, Dorm,
+                        Apartment, Magnetic Gray
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>20,000</h2>
+                    <h3 id="AddToCart14" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 15 -->
+            <section class="box">
+                <div class="image" id="box15">
+                <img src="Aya_20210204/product/images/61vBPPmcpzL._AC_SX679_.jpg" >
+                </div>
+                <div class="desc" id="box15_15">
+                    <h2>Kenmore</h2>
+                    <p>
+                        Kenmore 28"Top-Load Washer with Triple Action Impeller and 5.3 Cubic Ft. Total Capacity, White
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>25,000</h2>
+                    <h3 id="AddToCart15" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 16 -->
+            <section class="box">
+                <div class="image" id="box16">
+                <img src="Aya_20210204/product/images/61ARwQ+DvGL._AC_SX615_SY462_.jpg" >
+                </div>
+                <div class="desc" id="box16_16">
+                    <h2>Mini Washing Machine</h2>
+                    <p>
+                        SUPER DEAL Mini Washing Machine Small Laundry Washer Portable Single Tub Compact Wash Machine with Spin
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>23,000</h2>
+                    <h3 id="AddToCart16" >Add to cart</h3>
+                </div>
+            </section>
+            <!-- Box 17 -->
+            <section class="box">
+                <div class="image" id="box17">
+                <img src="Aya_20210204/product/images/51XA6q2KHvL._AC_SX679_.jpg" >
+                </div>
+                <div class="desc" id="box17_17">
+                    <h2>Washing Machine</h2>
+                    <p>
+                        Portable Laundry Washing Machine by BLACK+DECKER,
+                        Compact Pulsator Washer for Clothes, .9 Cubic ft. Tub, White, BPWM09W
+                    </p>
+                </div>
+                <div class="PriceAndButton">
+                    <h2>20,000</h2>
+                    <h3 id="AddToCart17" >Add to cart</h3>
+                </div>
+            </section>
+        </section> 
+    </article>
+
+    <!-- JavaScript -->
+    <script src="Bassem_20210216/main.js"></script>
+</body>
+</html>
