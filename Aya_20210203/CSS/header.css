@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;400;600;700;800&display=swap');
+
 
 /* Global Rules */
 
@@ -53,12 +55,12 @@ header nav a {
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
-    font-size: 15px;
+    font-size: 14px;
 }
 @media (max-width: 825px) {
     header nav a {
         width: 80px;
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 header nav a i {

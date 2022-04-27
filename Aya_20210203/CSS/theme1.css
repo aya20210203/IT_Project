@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;400;600;700;800&display=swap');
+
 /* Global Rules */
 
 * {
@@ -51,12 +53,12 @@ header nav a {
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
-    font-size: 15px;
+    font-size: 14px;
 }
 @media (max-width: 825px) {
     header nav a {
         width: 80px;
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 header nav a i {
@@ -215,6 +217,11 @@ footer .feedback {
 footer p {
     color: black;
     font-size: 17px;
+}
+@media (max-width: 767px) {
+    footer p {
+        font-size: 15px;
+    }
 }
 footer p span {
     color: var(--main-color);

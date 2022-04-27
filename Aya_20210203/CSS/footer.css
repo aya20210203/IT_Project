@@ -59,6 +59,11 @@ footer p {
     color: black;
     font-size: 17px;
 }
+@media (max-width: 767px) {
+    footer p {
+        font-size: 15px;
+    }
+}
 footer p span {
     color: var(--main-color);
     font-weight: bold;

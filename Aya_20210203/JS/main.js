@@ -31,7 +31,7 @@ function toTheme2 (){
     document.documentElement.style.setProperty("--dark-grey", "#ddd");
     document.documentElement.style.setProperty("--v-dark-grey", "#ccc");
     document.documentElement.style.setProperty("--m-dark-grey", "#868c96");
-    document.documentElement.style.fontFamily = "Poppins, sans-serif";
+    document.documentElement.style.fontFamily = "Roboto, sans-serif";
     window.localStorage.theme = 2;
 }
 
