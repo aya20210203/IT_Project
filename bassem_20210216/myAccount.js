@@ -193,22 +193,22 @@ function productDetails(boxId,boxId_Id,link)
         window.open(link, "_blank");
     }
 }
-productDetails("box2","box2_2","Aya_20210204/product/index.html#laptop-1");
-productDetails("box3","box3_3","Aya_20210204/product/index.html#laptop-2");
-productDetails("box4","box4_4","Aya_20210204/product/index.html#laptop-3");
-productDetails("box5","box5_5","Aya_20210204/product/index.html#laptop-4");
-productDetails("box6","box6_6","Aya_20210204/product/index.html#tv-1");
-productDetails("box7","box7_7","Aya_20210204/product/index.html#tv-2");
-productDetails("box8","box8_8","Aya_20210204/product/index.html#tv-3");
-productDetails("box9","box9_9","Aya_20210204/product/index.html#tv-4");
-productDetails("box11","box10_10","Aya_20210204/product/index.html#moblie-1");
-productDetails("box12","box11_11","Aya_20210204/product/index.html#moblie-2");
-productDetails("box10","box12_12","Aya_20210204/product/index.html#mobile-3");
-productDetails("box13","box13_13","Aya_20210204/product/index.html#moblie-4");
-productDetails("box15","box14_14","Aya_20210204/product/index.html#washingMachine-1");
-productDetails("box14","box15_15","Aya_20210204/product/index.html#washingMachine-2");
-productDetails("box16","box16_16","Aya_20210204/product/index.html#washingMachine-3");
-productDetails("box17","box17_17","Aya_20210204/product/index.html#washingMachine-4");
+productDetails("box2","box2_2","../Aya_20210204/product/index.html#laptop-1");
+productDetails("box3","box3_3","../Aya_20210204/product/index.html#laptop-2");
+productDetails("box4","box4_4","../Aya_20210204/product/index.html#laptop-3");
+productDetails("box5","box5_5","../Aya_20210204/product/index.html#laptop-4");
+productDetails("box6","box6_6","../Aya_20210204/product/index.html#tv-1");
+productDetails("box7","box7_7","../Aya_20210204/product/index.html#tv-2");
+productDetails("box8","box8_8","../Aya_20210204/product/index.html#tv-3");
+productDetails("box9","box9_9","../Aya_20210204/product/index.html#tv-4");
+productDetails("box11","box10_10","../Aya_20210204/product/index.html#moblie-1");
+productDetails("box12","box11_11","../Aya_20210204/product/index.html#moblie-2");
+productDetails("box10","box12_12","../Aya_20210204/product/index.html#mobile-3");
+productDetails("box13","box13_13","../Aya_20210204/product/index.html#moblie-4");
+productDetails("box15","box14_14","../Aya_20210204/product/index.html#washingMachine-1");
+productDetails("box14","box15_15","../Aya_20210204/product/index.html#washingMachine-2");
+productDetails("box16","box16_16","../Aya_20210204/product/index.html#washingMachine-3");
+productDetails("box17","box17_17","../Aya_20210204/product/index.html#washingMachine-4");
 
 
 
