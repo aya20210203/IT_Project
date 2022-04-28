@@ -179,6 +179,15 @@ header .menu {
     font-weight: 600;
 }
 
+@media (max-width: 770px) {
+    .header {
+        font-size: 12px;
+    }
+    .header .logo {
+        display: none;
+    }
+}
+
 .header .navigation{
     display: flex;
     justify-content: center;
