@@ -1,0 +1,102 @@
+
+section{
+    margin: 50px;
+}
+h2{
+    text-transform: capitalize;
+    color: var(--main-color);
+   text-align: center;
+    font-size: 45px
+
+}
+.pay {
+    width: 1000px;
+    height: 960px;
+    border: 2px solid #ddd;
+    vertical-align: middle;
+    margin: auto;
+    background-color: var(--v-dark-grey);
+
+
+}
+
+p.c {
+
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+    display: inline-block;
+    text-transform: capitalize;
+    
+}  
+form{
+    position: relative;
+    margin: 30px;
+}
+span{
+    vertical-align: middle;
+}
+button.butt{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 75px;
+    height: 40px;
+}
+
+.to{
+
+    border:2px solid black ;
+    outline: none;
+    height: 25px;
+}
+body{
+    background-color: var(--light-grey);
+}
+.cou{
+    display: block;
+    font-weight: bold;
+    font-size:20px;
+    color: var(--main-color);
+}
+.end{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    width: 500px;
+    height: 65px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 25px;
+}
+.confir{
+    position: relative;
+    top: 150px;
+    left: 200px;
+}
+button:hover { 
+    transform: scale(1.1);
+
+}
+.addlen{
+    line-height: 2;
+   
+}
+.addcard{
+     text-indent: 20px;
+}
+#phon{
+    margin: 15px 40px 25px 35px;
+}
+.lab{
+    text-transform: capitalize;
+}
+#messag{
+    margin-left: 125px;
+    font-size: 25px;
+}
+#vouc{
+    position: relative;
+    top: 8px;
+}

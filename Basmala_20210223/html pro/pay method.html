@@ -1,0 +1,155 @@
+<!doctype html>
+<html leng="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Infinity Store</title>
+    <link rel="stylesheet" href="../css pro/pay.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../../Aya_20210207/css/theme2.css" >
+    <link rel="stylesheet" href="../../Aya_20210203/CSS/theme1.css">
+</head>
+<body>
+  <header id="themeOne">
+    <div class="logo">INFINITY&nbsp;STORE</div>
+    <div class="menu" id="menu">
+        <i class="fa-solid fa-bars bar"></i>
+    </div> 
+    <nav>
+        <a href="../../index.html"><i class="fa-solid fa-house"></i>Home Page</a>
+        <a href="../../Aya_20210207/search.html"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+        <a href="../../bassem_20210216/myAccount.html"><i class="fa-solid fa-user"></i>My Account</a>
+        <a href="../../Isaac_20210145/"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+        <a href="../../Aya_20210211/Shopping_cart/Cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a>  
+        <a href="../../Aya_20210204/help/help.html"><i class="fa-solid fa-circle-question"></i>Help</a>    
+    </nav>
+ </header>
+ <div class="header" id="themeTwo" style="display: none;">
+            
+    <a href="#" class="logo">Infinity Store</a>
+    <ul class="navigation">
+        <li><a href="../../index.html">Home Page</a></li>
+        <li><a href="../../Aya_20210207/search.html">Search</a></li>
+        <li><a href="../../bassem_20210216/myAccount.html">My Account</a></li>
+        <li><a href="../../Isaac_20210145/">Login</a></li>
+        <li><a href="../../Aya_20210211/Shopping_cart/Cart.html">Cart</a></li>
+        <li><a href="../../Aya_20210204/help/help.html">Help</a></li>
+    </ul>
+ </div>
+ <button id="changeTheme"><i class="fa-solid fa-brush"></i></button>
+    <section>
+        <h2>select a payment method</h2>
+        <div class="pay">
+          <form>
+              <div class="card">
+                <span><img src="https://static.jumia.com.eg/cms/Hany_Logos/PNg24.png" alt=""> </span>
+                <p class="c">pay by card</p>
+                <button type="button"id=add class="butt">add card</button>
+                <div class="addcard" id="hid" style="display:none">
+                    <div class="addlen" >
+                      <label class="lab">Card number</label>
+                      <input class=" to " type="text" name="c.n"   >  
+                    </div>
+                    <div class="addlen">
+                        <label class="lab">Name on card</label>
+                        <input  class=" to " type="text" name="c.name" >  
+                    </div>
+                    <div class="addlen">
+                        <label class="lab">Expiration date</label>
+                        <input  class="to" type="data" name="c.d">
+                    </div>
+                    <div>
+                        <button class="butt" >submit</button>
+                    </div>  
+                </div> 
+              </div>
+              <hr>
+              <div class="cash">
+                  <input type="radio" name="pay" id="cash" value="cash">
+                  <label for="cash">
+                      <span>
+                        <img src="https://static.jumia.com.eg/cms/Payments/cash-colour.png" alt=""> 
+                      </span>
+                      <p class="c">cash on delivery</p>
+                  </label>
+              </div>
+              <hr>
+              <div class="Fawry">
+                  <input type="radio" name="pay" id="fawry" value="fawry">
+                  <label for="fawry">
+                      <span>
+                        <img src="https://static.jumia.com.eg/cms/JumiaPay-file/Fawrylogo-(1).png" alt="">
+                      </span>
+                      <p class="c">pay with fawry</p>   
+                  </label>
+                  <p id="messag" style="display:none">We will send you a payment code</p>
+              </div>
+              <hr>
+              <div class="voda">
+                <input type="radio" name="pay" id="voda" value="voda">
+                  <label for="voda">
+                     <span>
+                        <img src="https://static.jumia.com.eg/cms/Hany_Logos/VodafoneCash.jpg" alt="">
+                      </span>
+                      <p class="c">pay with Vodafone Cash</p>
+                    </label>
+                    <div id="phon"style="display:none">
+                        <label class="lab">phone</label>
+                        <input type="text" name="phone" class="to">
+                        <button class="butt">send</button>
+                    </div>
+               
+              </div>
+              <hr>
+              <div class="coupon">
+                  <p class="cou">do you have a voucher?</p>
+                <input type="text" name="pay" id="vouc" class="to" placeholder="Enter coupon code here">
+                <button class="butt" >
+                    <span class="label">add voucher</span>
+                </button>
+              </div>
+              <div class="confir">
+                <button class="end">
+                  confirm order
+                </button>
+              </div>
+         
+
+          </form>
+        </div>
+    </section>
+    <script src="../js pro/pay.js"></script>
+    <footer id="footerOne">
+      <div class="text">Join Us</div>
+      <div class="social">
+          <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a> 
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a> 
+          <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a> 
+      </div>
+      <p>&copy; 2022 <span>INFINITY STORE</span> All Rights Reserved</p> 
+      <div class="feedback">
+          <a href="../../Aya_20210211/feedback&support/feed.html">feedback & support</a>
+      </div> 
+   </footer>
+   <div class="footer" id="footerTwo" style="display: none;">
+              
+      <div class="container">
+          <div class="cloumn">
+              <div class="footer-col">
+                  <h3>Follow Us</h3>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>    
+              </div>
+              <div class="footer-bottom">
+                  <p>copyright &copy;2022 infinity store ALL RIGHTS RESERVED</p>
+                  <a href="../../Aya_20210211/feedback&support/feed.html">feedback & support</a>
+              </div>
+              
+          </div>
+      </div>
+   </div>
+   <script src="../../Aya_20210203/JS/main.js"></script>
+</body>
+</html>
