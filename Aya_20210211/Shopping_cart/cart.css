@@ -1,4 +1,3 @@
-/* cart item details  */
 
 /* Shopping cart name */
 .name{
@@ -69,8 +68,9 @@ td a:hover{
     margin: 5px;
 }
 .detail{
+    padding-left: 10px;
    
-    margin-left: 5px;
+    margin-left: 10px;
 }
 td img{
 

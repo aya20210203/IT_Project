@@ -18,8 +18,8 @@ let total = document.getElementById("TotalPrice");
 function subtotal(){
     if(price.value != ''){
         let result =(Number(+price.value) * (+quantity.value));
-        subtotall.innerHTML =parseFloat(result)+'.000' ;
-        total.innerHTML=parseFloat(result)+'.000';
+        subtotall.innerHTML =parseFloat(result)+" EGP" ;
+        total.innerHTML=parseFloat(result)+" EGP";
         // total = result.value;
         // console.log(total.value);
 
