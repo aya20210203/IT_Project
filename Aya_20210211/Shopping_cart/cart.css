@@ -16,12 +16,16 @@
 #cartIcon{
     color: var(--main-color);
     font-size: 70px;
+    
 }
-
+.cart_items{
+     display: none !important;
+}
 /* Table of cart */
 table{
     width: 95% ;
-    border-collapse: collapse;
+    border-collapse: collapse; 
+     
 }
 
 .cart-info{
@@ -34,12 +38,18 @@ th{
     color: white;
     background-color:var( --third-color);
     font-weight: normal;
+    
 }
+.cart{
+     display: none;
+} 
 td{
     padding: 6px;
+   
 }
 td input{
-    height: 30px;
+    height: 30px; 
+    
 }
 td input:hover{
     border: 2px solid;
