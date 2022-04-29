@@ -21,7 +21,14 @@ let index16 = document.getElementById("b16");
 let arr=[];
 function addProduct(id){
    arr.push(id);
-   localStorage.setItem('usercart',JSON.stringify(arr));
+   if (localStorage.usercart){
+      arr = arr.concat(JSON.parse(localStorage.getItem('usercart')));
+      arr = [...new Set(arr)];
+      localStorage.setItem('usercart',JSON.stringify(arr));
+   }
+   else {
+      localStorage.setItem('usercart',JSON.stringify(arr));
+   }
    let index = JSON.parse(localStorage.getItem('usercart'));
    console.log(index);
 }
