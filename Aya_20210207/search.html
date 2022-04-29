@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>search page</title>
+        <link rel="stylesheet" href="search.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="../Aya_20210203/CSS/header.css" >
+    </head>
+    <body>
+        <header id="themeOne">
+            <div class="logo">INFINITY&nbsp;STORE</div>
+            <div class="menu" id="menu">
+                <i class="fa-solid fa-bars bar"></i>
+            </div> 
+            <nav>
+                <a href="../index.html"><i class="fa-solid fa-house"></i>Home Page</a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+                <a href="../bassem_20210216/myAccount.html"><i class="fa-solid fa-user"></i>My Account</a>
+                <a href="#"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+                <a href="../Aya_20210211/Shopping_cart/Cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a>  
+                <a href="../Aya_20210204/help/help.html"><i class="fa-solid fa-circle-question"></i>Help</a>  
+            </nav>
+        </header>
+        <div class="header" id="themeTwo" style="display: none;">
+            
+            <a href="#" class="logo">Infinity Store</a>
+            <ul class="navigation">
+                <li><a href="../index.html">Home Page</a></li>
+                <li><a href="#">Search</a></li>            
+                <li><a href="../bassem_20210216/myAccount.html">My Account</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="../Aya_20210211/Shopping_cart/Cart.html">Cart</a></li>
+                <li><a href="../Aya_20210204/help/help.html">Help</a></li>
+            </ul>
+        </div>
+        <button id="changeTheme"><i class="fa-solid fa-brush"></i></button>
+        <div class="count">
+            <form action="https://aya20210203.github.io/IT_Project/index.html" method="" class="Wapper">
+                <input  onkeyup="search()" type="text" name="search" id="search"  placeholder="search" autocomplete="chrome-off">
+                <button id="myBtn" type="submit" onclick="searchFunction"><i class="fa-solid fa-magnifying-glass"></i></button>            
+                <div class="results">               
+                </div>
+            </form>
+        </div>
+        <script src="search.js"></script>
+        <script src="../Aya_20210203/JS/header.js"></script>
+    </body>
+</html>

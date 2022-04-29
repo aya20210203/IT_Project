@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../Aya_20210207/css/theme2.css">
     <link rel="stylesheet" href="../../Aya_20210203/CSS/theme1.css" >
 </head>
-<body>
+<body onload="getCartItems()">
 
 
 
@@ -46,6 +46,7 @@
     <!-- End of header -->
   
         <!-- cart item details -->
+
         <div class="name">
             <span class="text">Shopping Cart</span>
             <i class="fa-solid fa-cart-shopping" id="cartIcon" ></i>
@@ -53,7 +54,8 @@
             
         </div> 
 
-    <div class="samll-container cart-page">
+
+    <div class="samll-container ">
         <table>
              
             <tr>
@@ -62,63 +64,425 @@
                 <th>Quantity</th>
                 <th>Subtotal</th>
             </tr>
-        <div class="cart_items">
-            <tr>
-            <div class="cart_row">
-                <td>
-                    <div class="cart-info">
-                        <img src="Iphone.jpg" >
-                        <div>
-                            <p>Ipone 13 pro max</p>
-                            <span style="font-size: small; padding-bottom: 5px;">Price :</span>
-                            <input type="number" id="Cart_price" value="23.000" style="height: 30px; width: 65px;" readonly>
-                        </div>
-
-                    </div>
-                </td>
-                <div>
-                <td>
-                    <div class="button">
-                    <i class="fa-solid fa-trash-can"></i>
-                    <span class="buuton">Remove</span>
-                    </div>
-                </td>
-                <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
-                <td id="subtotall" >23.000</td>
-                </div>
-            </div>
-            </tr>
-
-
-            <!-- repeat cart products -->
-
-            <tr>
-                
+         <div class="cart_items">
+            <tr class="cart" id="b1">
                 <div class="cart_row">
                     <td>
                         <div class="cart-info">
-                            <img src="../../Aya_20210204/product/images/71IlDSwE3+L._AC_SL1500_.jpg" >
-                            <div>
-                                <p>Asus ZenBook</p>
-                                <span style="font-size: small; padding-bottom: 5px;">Price :</span>
-                                <input type="number" id="Cart_price" value="15.000" style="height: 30px; width: 65px;" readonly >
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/71IlDSwE3+L._AC_SL1500_.jpg" >
                             </div>
+                            <div class="detail">
+                                <p><b>Asus ZenBook</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="15.550" style="height: 30px; width: 65px;" readonly>
+                             </div>
                         </div>
                     </td>
                     <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">15.550 EGP</td>
+                     </div>
+                </div>
+            </tr>
+
+            <!-- repeat cart products -->
+            <tr class="cart" id="b2">
+                <div class="cart_row">
                     <td>
-                        <div class="button">
-                        <i class="fa-solid fa-trash-can"></i>
-                        <span class="buuton">Remove</span>
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/61S+-V9lowL._AC_SL1346_.jpg" >
+                            </div>
+                            <div class="detail">
+                                <p><b>Hp</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="17.000" style="height: 30px; width: 65px;" readonly>
+                             </div>
                         </div>
                     </td>
-                    <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
-                    <td id="subtotall" >15.550</td>
-                    </div>
+                    <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall" >17.000 EGP</td>
+                     </div>
                 </div>
-                </tr>
-           
-     
+            </tr>
+            <tr class="cart" id="b3">
+                <div class="cart_row">
+                    <td>
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/71xX9l5+pgL._AC_SL1260_.jpg" >
+                            </div>
+                            <div class="detail">
+                                <p><b>Mac</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="25.550" style="height: 30px; width: 65px;" readonly>
+                             </div>
+                        </div>
+                    </td>
+                    <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">25.550 EGP</td>
+                     </div>
+                </div>
+            </tr>
+            <tr class="cart" id="b4">
+                <div class="cart_row">
+                    <td>
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/41S+QGLrm0L._AC_SX569_.jpg" >
+                            </div>
+                            <div class="detail">
+                                <p><b>Lenovo</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="16.550" style="height: 30px; width: 65px;" readonly>
+                             </div>
+                        </div>
+                    </td>
+                    <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">16.550 EGP</td>
+                     </div>
+                </div>
+            </tr>
+            <tr class="cart" id="b5">
+                <div class="cart_row">
+                    <td>
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/91n+0a65XFL._AC_SX679_.jpg" >
+                            </div>
+                            <div class="detail">
+                                <p><b>LG</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="1.398" style="height: 30px; width: 65px;" readonly>
+                             </div>
+                        </div>
+                    </td>
+                    <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">1.398 EGP</td>
+                     </div>
+                </div>
+            </tr>
+            <tr class="cart" id="b6">
+                <div class="cart_row">
+                    <td>
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/81a3EBam-yL._AC_SX679_.jpg" >
+                            </div>
+                            <div class="detail">
+                                <p><b>SAMSUNG</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="2.099" style="height: 30px; width: 65px;" readonly>
+                             </div>
+                        </div>
+                    </td>
+                    <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">2.099 EGP</td>
+                     </div>
+                </div>
+            </tr>
+            <tr class="cart" id="b7">
+                <div class="cart_row">
+                    <td >
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/91KZbi-CbzL._AC_SX679_.jpg" >
+                            </div>
+                            <div class="detail">
+                                <p><b>Sony</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="2.199" style="height: 30px; width: 65px;" readonly>
+                             </div>
+                        </div>
+                    </td>
+                    <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">2.199 EGP</td>
+                     </div>
+                </div>
+            </tr>
+            <tr class="cart" id="b8">
+                <div class="cart_row">
+                    <td>
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/81Y8IwejYBL._AC_SX679_.jpg" >
+                            </div>
+                            <div class="detail">
+                                <p><b>VIZIO</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="5.999" style="height: 30px; width: 65px;" readonly>
+                             </div>
+                        </div>
+                    </td>
+                    <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td ><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">5.999 EGP</td>
+                     </div>
+                </div>
+            </tr>
+            <tr class="cart" id="b9">
+                <div class="cart_row">
+                    <td >
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/712iry8nIYL._AC_SX679_.jpg" >
+                            </div>
+                            <div class="detail">
+                                <p><b>SAMSUNG</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="5.000" style="height: 30px; width: 65px;" readonly>
+                             </div>
+                        </div>
+                    </td>
+                    <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">5.000 EGP</td>
+                     </div>
+                </div>
+            </tr>
+            <tr class="cart" id="b10">
+                <div class="cart_row">
+                    <td>
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/71GfkO58E2L._AC_SX679_.jpg" >
+                            </div>
+                            <div class="detail">
+                                <p><b>Oppo</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="6.900" style="height: 30px; width: 65px;" readonly>
+                             </div>
+                        </div>
+                    </td>
+                    <div>
+                        <td class="cart">
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">6.900 EGP</td>
+                     </div>
+                </div>
+            </tr>
+            <tr class="cart" id="b11">
+                <div class="cart_row">
+                    <td>
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/71DCZOdq92S.__AC_SX300_SY300_QL70_FMwebp_.webp" >
+                            </div>
+                            <div class="detail">
+                                <p><b>Redmi</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="3.800" style="height: 30px; width: 65px;" readonly>
+                             </div>
+                        </div>
+                    </td>
+                    <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">3.800 EGP</td>
+                     </div>
+                </div>
+            </tr>
+            <tr class="cart" id="b12">
+                <div class="cart_row">
+                    <td>
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/61P5dEhFIrL._AC_SX679_.jpg" >
+                            </div>
+                            <div class="detail">
+                                <p><b>iPhone</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="15.900" style="height: 30px; width: 65px;" readonly>
+                             </div>
+                        </div>
+                    </td>
+                    <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">15.900 EGP</td>
+                     </div>
+                </div>
+            </tr>
+            <tr class="cart" id="b13">
+                <div class="cart_row">
+                    <td>
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/51XQk2-ST2L._AC_SX679_.jpg" >
+                            </div>
+                            <div class="detail">
+                                <p><b>COMFEE</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="9.659" style="height: 30px; width: 65px;" readonly>
+                             </div>
+                        </div>
+                    </td>
+                    <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">9.659 EGP</td>
+                     </div>
+                </div>
+            </tr>
+            <tr class="cart" id="b14">
+                <div class="cart_row">
+                    <td >
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/61vBPPmcpzL._AC_SX679_.jpg" >
+                            </div>
+                            <div class="detail">
+                                <p><b>Kenmore</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="8.790" style="height: 30px; width: 65px;" readonly>
+                             </div>
+                        </div>
+                    </td>
+                    <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">8.790 EGP</td>
+                     </div>
+                </div>
+            </tr>
+            <tr class="cart" id="b15">
+                <div class="cart_row">
+                    <td>
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/61ARwQ+DvGL._AC_SX615_SY462_.jpg" >
+                            </div>
+                            <div class="detail">
+                                <p><b>SUPER DEAL</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="2.760" style="height: 30px; width: 65px;" readonly>
+                             </div>
+                        </div>
+                    </td>
+                    <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">2.760 EGP</td>
+                     </div>
+                </div>
+            </tr>
+            <tr class="cart" id="b16">
+                <div class="cart_row">
+                    <td>
+                        <div class="cart-info">
+                            <div class="imageDiv" style="  width: 100px; height: 100px; ">
+                                <img src="../../Aya_20210204/product/images/51XA6q2KHvL._AC_SX679_.jpg" >
+                            </div>
+                            <div class="detail">
+                                <p><b>Portable</b></p>
+                                <span style="font-size: small;">Price :</span>
+                                <input type="number" id="Cart_price" value="1.899" style="height: 30px; width: 65px;" readonly>
+                             </div>
+                        </div>
+                    </td>
+                    <div>
+                        <td>
+                            <div class="button">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="buuton">Remove</span>
+                            </div>
+                        </td>
+                        <td><input onkeyup="subtotal()" id="cart_quantity" type="number" max="10" min="1" step="1" value="1" ></td>
+                        <td id="subtotall">1.899 EGP</td>
+                     </div>
+                </div>
+            </tr>
             <!-- End repeat of cart products -->
 
         </div> 
@@ -135,11 +499,10 @@
                     <td>Tax</td>
                     <td>35.00</td>
                 </tr> -->
-                <tr> 
+                <tr>  
                     <td>Total</td>
-                    <td class="TotalPrice">0.000</td>
+                    <td id="TotalPrice">0.000 EGP</td>
                 </tr>
-               
             </table>
             <br>            
         </div>
@@ -147,7 +510,6 @@
             <a class="checkout" href="#"> Buy Now</a>
         </div>
     </div>
-
       <!-- footer -->
       <footer id="footerOne">
         <div class="text">Join Us</div>
@@ -186,5 +548,6 @@
 
 <script src="../../Aya_20210203/JS/main.js"></script>
 <script src="cart.js"></script>
+<script src="../../Aya_20210204/product/cart.js"></script> 
 </body>
 </html>

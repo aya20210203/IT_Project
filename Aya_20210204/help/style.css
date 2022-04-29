@@ -37,8 +37,7 @@ img{
     margin-top: 10px;
 }
 .order,.product,
-.account,.payment,
-.viewed,.reviews
+.account,.payment
 {
     position: relative;
     border: 1px solid  var(--dark-grey);
@@ -53,9 +52,8 @@ img{
 .order:hover,
 .product:hover,
 .payment:hover,
-.account:hover,
-.viewed:hover,
-.reviews:hover
+.account:hover
+
 {
     background-color: var(--light-grey);
     
