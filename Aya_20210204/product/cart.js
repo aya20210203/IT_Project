@@ -6,7 +6,6 @@ function getCartItems(){
         let id =index[i];
         let ele =document.getElementById(id);
         ele.style.display = "table-row";
-    }
-    
+    }  
  }
 
