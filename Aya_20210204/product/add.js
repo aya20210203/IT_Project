@@ -21,7 +21,9 @@ let index16 = document.getElementById("b16");
 let arr=[];
 function addProduct(id){
    arr.push(id);
-   localStorage.setItem
+   localStorage.setItem('usercart',JSON.stringify(arr));
+   let index = JSON.parse(localStorage.getItem('usercart'));
+   console.log(index);
 }
 index1.onclick = function(){
    if(index1.innerHTML=="Add To Cart"){
