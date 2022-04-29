@@ -1,8 +1,5 @@
 body{
   margin: 0;
-  font-family: sans-serif;
-  margin: 0;
-  padding-top: 10px;
 }
 a{
   text-decoration: none;
@@ -46,12 +43,12 @@ img{
   font-weight: 100%;
   text-align: center;
   letter-spacing: 1px;
-  color: #16558F
+  color: var(--main-color)
 }
 h6{
   font-size: 26px;
   text-align: center;
-  color: #222F3E;
+  color: var(--main-color);
   margin: 0;
 }
 .status{
