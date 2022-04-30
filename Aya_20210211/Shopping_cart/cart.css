@@ -12,6 +12,10 @@
 
 } 
 
+.cart{
+    display: none;
+}
+
 /* cart icon */
 #cartIcon{
     color: var(--main-color);
