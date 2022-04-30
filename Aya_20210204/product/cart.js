@@ -5,14 +5,6 @@ function getCartItems(){
     {
         let id =index[i];
         let ele =document.getElementById(id);
-        ele.style.display = "table-row";
-<<<<<<< HEAD
-
-        
-    }
-    
-=======
-    }  
->>>>>>> 03790d2d2aaaa17e9e1b1b392fbd6d6ef8311a2c
- }
-
+        ele.style.display = "table-row";        
+    }    
+}  
