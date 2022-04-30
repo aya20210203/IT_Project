@@ -1,17 +1,5 @@
 
-//working js 
-if(document.readyState == "loading"){
-    document.addEventListener('DOMContentLoaded',ready)
-}
-else
-{ 
-    ready();
-
-}
-
-//making function 
-function ready(){
-    var removeCartButton = document.getElementsByClassName("buuton");
+var removeCartButton = document.getElementsByClassName("buuton");
     for(var i =0 ;i<removeCartButton.length ; i++)
     {
         var button = removeCartButton[i]
@@ -27,14 +15,10 @@ function ready(){
         arr.splice(x , 1);
         localStorage.setItem('usercart',JSON.stringify(arr));
         console.log(localStorage.usercart);
-        location.reload()
+        
     
         })
     }
- }
-
-
-
 
 
 var total = document.getElementById("TotalPrice");
@@ -59,9 +43,6 @@ var totalProduct1  ;
         subtotall.innerHTML ='0.000';
     }
 }
-// total.innerHTML=(totalProduct)+" EGP";
-// console.log(total);
-
 
 
 function subtotal2(){
