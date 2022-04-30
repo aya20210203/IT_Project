@@ -61,6 +61,7 @@
 }
 .cart{
     border: var(--main-color) solid;
+    cursor: pointer;
 }
 .review{
     text-decoration: none;
