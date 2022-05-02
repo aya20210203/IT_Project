@@ -12,15 +12,22 @@
 
 } 
 
+.cart{
+    display: none;
+}
+
 /* cart icon */
 #cartIcon{
     color: var(--main-color);
     font-size: 70px;
     
 }
+
 .cart_items{
      display: none !important;
 }
+
+
 /* Table of cart */
 table{
     width: 95% ;
@@ -81,11 +88,12 @@ td a:hover{
     padding-left: 10px;
    
     margin-left: 10px;
+    margin-top: -7px;
 }
 td img{
 
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
    
 }
 
@@ -110,7 +118,7 @@ th:last-child{
 .checkbutton{
     
     margin-left: 1045px;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
 }
 
 .checkout{
@@ -129,5 +137,97 @@ th:last-child{
     font-size :15px;
     border: 2px solid white;
 }
-
-
+@media (min-width:1433px) and (max-width:1280px){
+    .checkbutton{
+        margin-left: 800px;
+    }
+    .checkout{
+        width: 380px;
+    }
+    .total-price{
+        padding-left:800px ;
+    }
+}
+@media (min-width:1205px) and (max-width:1432px)
+{
+    .checkbutton{
+        margin-left: 800px;
+    }
+    .checkout{
+        width: 380px;
+    }
+    .total-price{
+        padding-left:830px ;
+    }
+}
+@media (min-width:1145px) and (max-width:1201px){
+    .checkbutton{
+        margin-left: 780px;
+    }
+    .checkout{
+        width: 350px;
+    }
+    .total-price{
+        padding-left:770px ;
+    }
+}
+@media (min-width:1001px) and (max-width:1144px){
+    .checkbutton{
+        margin-left: 680px;
+    }
+    .checkout{
+        width: 300px;
+    }
+    .total-price{
+        padding-left:650px ;
+    }
+}
+@media (min-width:944px) and (max-width:1000px)
+{
+    .checkbutton{
+        margin-left: 650px;
+    }
+    .checkout{
+        width: 300px;
+    }
+    .total-price{
+        padding-left:630px ;
+    }
+}
+@media (min-width:901px) and (max-width:943px){
+    .checkbutton{
+        margin-left: 610px;
+    }
+    .checkout{
+        width: 300px;
+    }
+    .total-price{
+        padding-left:610px ;
+    }
+}
+@media (min-width:823px) and (max-width:900px){
+    .checkbutton{
+        margin-left: 540px;
+    }
+    .checkout{
+        width: 300px;
+    }
+    .total-price{
+        padding-left:550px ;
+    }
+}
+@media (min-width:100px) and (max-width:822px)
+{
+    .checkbutton{
+    
+        margin-left: 10px;
+    }
+    .checkout{
+        width: 250px;
+    }
+    .total-price{
+        padding-left:10px ;
+        padding-right: 100px;
+    }
+    
+}
