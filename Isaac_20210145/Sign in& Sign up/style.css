@@ -12,7 +12,7 @@ body{
     font-size: 18px;
     width: 400px;
     max-width: 400px;
-    margin: 1.5rem auto;
+    margin: 100px calc(50% - 200px) 80px calc(50% - 200px);
     padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radius);
@@ -121,4 +121,15 @@ body{
 
 .form-link:hover{
     text-decoration: underline;
+}
+#themeOne,
+#themeTwo{
+    position: fixed;
+    z-index: 1100;
+    top: 0;
+}
+
+#changeTheme{
+    position: fixed !important; 
+    z-index: 1101;  
 }
