@@ -6,16 +6,11 @@ var removeCartButton = document.getElementsByClassName("buuton");
             var buttonClicked = event.target ;
             buttonClicked.parentElement.parentElement.parentElement.remove();
     
-        var id = buttonClicked.parentElement.parentElement.getAttribute('id');
-        console.log(id);
+        var id = buttonClicked.parentElement.parentElement.parentElement.getAttribute('id');
         var arr = JSON.parse(localStorage.getItem('usercart'));
         var x = arr.indexOf(id);
-        console.log(x);
         arr.splice(x , 1);
         localStorage.setItem('usercart',JSON.stringify(arr));
-        console.log(localStorage.usercart);
-        
-    
         })
     }
 
@@ -34,7 +29,6 @@ var totalProduct1  ;
         result = Math.round(result);
         subtotall.innerHTML ="EGP " +(result);
         totalProduct1 = result ;
-        console.log(totalProduct1);
         total.innerHTML="EGP " +(totalProduct1);
 
     }
@@ -53,7 +47,6 @@ function subtotal2(){
             result = Math.round(result ) ;
             subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
 
         }
@@ -72,7 +65,6 @@ function subtotal3(){
             result = Math.round(result);
             subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
         }
         else{
@@ -90,7 +82,6 @@ function subtotal4(){
             result = Math.round(result);
             subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
         }
         else{
@@ -108,7 +99,6 @@ function subtotal5(){
             result = Math.round(result) ;
             subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
         }
         else{
@@ -126,7 +116,6 @@ function subtotal6(){
             result = Math.round(result) ;
             subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
         }
         else{
@@ -144,7 +133,6 @@ function subtotal7(){
             result = Math.round(result) ;
             subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
         }
         else{
@@ -162,7 +150,6 @@ function subtotal8(){
             result = Math.round(result) ;
             subtotall.innerHTML ="EGP " +(result);
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
         }
         else{
@@ -180,7 +167,6 @@ function subtotal9(){
             result = Math.round(result) ;
             subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
         }
         else{
@@ -198,7 +184,6 @@ function subtotal10(){
             result = Math.round(result) ;
             subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
         }
         else{
@@ -216,7 +201,6 @@ function subtotal11(){
             result = Math.round(result) ;
             subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
         }
         else{
@@ -234,7 +218,6 @@ function subtotal12(){
             result = Math.round(result ) ;
             subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
         }
         else{
@@ -252,7 +235,6 @@ function subtotal13(){
             result = Math.round(result );
             subtotall.innerHTML ="EGP " +(result);
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
         }
         else{
@@ -270,7 +252,6 @@ function subtotal14(){
             result = Math.round(result ) ;
             subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
         }
         else{
@@ -288,7 +269,6 @@ function subtotal15(){
             result = Math.round(result) ;
             subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
         }
         else{
@@ -306,7 +286,6 @@ function subtotal16(){
             result = Math.round(result ) ;
             subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
             total.innerHTML="EGP " +(totalProduct);
         }
         else{
