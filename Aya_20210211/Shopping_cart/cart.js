@@ -1,4 +1,3 @@
-
 var removeCartButton = document.getElementsByClassName("buuton");
     for(var i =0 ;i<removeCartButton.length ; i++)
     {
@@ -7,7 +6,7 @@ var removeCartButton = document.getElementsByClassName("buuton");
             var buttonClicked = event.target ;
             buttonClicked.parentElement.parentElement.parentElement.remove();
     
-        var id = buttonClicked.parentElement.parentElement.parentElement.getAttribute('id');
+        var id = buttonClicked.parentElement.parentElement.getAttribute('id');
         console.log(id);
         var arr = JSON.parse(localStorage.getItem('usercart'));
         var x = arr.indexOf(id);
