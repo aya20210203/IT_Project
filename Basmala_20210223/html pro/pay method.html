@@ -41,24 +41,24 @@
         <div class="pay">
           <form>
               <div class="card">
-                <span><img src="https://static.jumia.com.eg/cms/Hany_Logos/PNg24.png" alt=""> </span>
+                <span><img src="https://static.jumia.com.eg/cms/Hany_Logos/PNg24.png" alt="downlod"> </span>
                 <p class="c">pay by card</p>
                 <button type="button"id=add class="butt">add card</button>
                 <div class="addcard" id="hid" style="display:none">
                     <div class="addlen" >
                       <label class="lab">Card number</label>
-                      <input class=" to " type="text" name="c.n"   >  
+                      <input class=" to " type="text" name="c.n"  required >  
                     </div>
                     <div class="addlen">
                         <label class="lab">Name on card</label>
-                        <input  class=" to " type="text" name="c.name" >  
+                        <input  class=" to " type="text" name="c.name" required>  
                     </div>
                     <div class="addlen">
                         <label class="lab">Expiration date</label>
-                        <input  class="to" type="data" name="c.d">
+                        <input  class="to" type="date" name="c.d" required>
                     </div>
                     <div>
-                        <button class="butt" >submit</button>
+                        <button class="butt" > submit</button>
                     </div>  
                 </div> 
               </div>
@@ -103,14 +103,15 @@
               <div class="coupon">
                   <p class="cou">do you have a voucher?</p>
                 <input type="text" name="pay" id="vouc" class="to" placeholder="Enter coupon code here">
-                <button class="butt" >
+                <button   class="butt" id="text" >
                     <span class="label">add voucher</span>
                 </button>
               </div>
               <div class="confir">
-                <button class="end">
-                  confirm order
-                </button>
+                <button class="end" > 
+                  <a href="track.html"class="edit">confirm order </a>
+                </button>  
+                
               </div>
          
 
