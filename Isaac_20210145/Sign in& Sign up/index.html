@@ -44,17 +44,14 @@
             <h1 class="form-title">Sign in</h1>
             <div class="form-message form-message-error"></div>
             <div class="form-input-group">
-                <input type="text" class="form-input" autofocus placeholder="Username or email" required>
+                <input type="text" id="email" class="form-input" autofocus placeholder="Username or email" required>
                 <div class="form-input-error-message"></div>
             </div>
             <div class="form-input-group">
-                <input type="password" class="form-input" autofocus placeholder="Password" required>
+                <input type="password" id="password" class="form-input" autofocus placeholder="Password" required>
                 <div class="form-input-error-message"></div>
             </div>
-            <button class="form-button" type="submit">Continue</button>
-            <p class="form-text">
-                <a href="#" class="form-link">Forgot your password?</a>
-            </p>
+            <button class="form-button" id="submit" type="submit">Continue</button>
             <p class="form-text">
                 <a class="form-link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
             </p>
@@ -63,7 +60,11 @@
             <h1 class="form-title">Sign up</h1>
             <div class="form-message form-message-error"></div>
             <div class="form-input-group">
-                <input type="text" id="signupUsername" class="form-input" autofocus placeholder="Username" required>
+                <input type="text" id="signupUsername" class="form-input" autofocus placeholder="First name" required>
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="text" id="signupUsername" class="form-input" autofocus placeholder="Last name" required>
                 <div class="form-input-error-message"></div>
             </div>
             <div class="form-input-group">
