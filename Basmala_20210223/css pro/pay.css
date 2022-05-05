@@ -63,7 +63,6 @@ body{
 }
 .end{
     background-color: var(--main-color);
-    color: var(--secondary-color);
     width: 500px;
     height: 65px;
     text-transform: uppercase;
@@ -99,4 +98,11 @@ button:hover {
 #vouc{
     position: relative;
     top: 8px;
+}
+.order{
+    margin: 8;
+}
+.edit{
+    color: var(--secondary-color);
+    text-decoration: none;
 }
