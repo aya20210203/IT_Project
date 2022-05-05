@@ -1,33 +1,9 @@
 body {
     background-color:lightgray;
 }
-
-.footer2 {
-    font-style: italic;
-    float: left;  
-    width: 33%;
-    height: 200px ;
-    background-color: grey;
+section h2 {
+    color: var(--main-color);
 }
-.footer2 ul li a {
-    text-decoration: none;
-    color:firebrick;
-    font-size: 20px;
+section {
+    padding: 5px;
 }
-.x p{
-    color: firebrick;
-    font-size: 20px ;
-    font-style: italic;
-    text-align: center;
-    font-weight: bold;
-}
-.x a {
-    border-radius: 20%;
-    color:firebrick;
-    text-decoration: none;
-}
-.x a:hover {
-    background-color: dimgray;
-    transition: 2s;
-}
-

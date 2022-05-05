@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Reviews</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>project 2</title>
+    <link rel="stylesheet" href="checkout.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../../Aya_20210207/css/theme2.css" >
     <link rel="stylesheet" href="../../Aya_20210203/CSS/theme1.css" >
@@ -38,24 +38,26 @@
         </ul>
     </div>
     <button id="changeTheme"><i class="fa-solid fa-brush"></i></button>
-    <section>
-        <h2>Customers Reviews </h2>
-        <i class="fa-solid fa-user" style="font-size: 15px; color: var(--main-color);">laila</i>
-        <p>Excellent product and excellent price</p>
-        <hr>
-        <i class="fa-solid fa-user" style="font-size: 15px; color: var(--main-color);">ahmed</i>
-        <p>the product is very high quality</p>
-        <hr>
-        <i class="fa-solid fa-user" style="font-size: 15px; color: var(--main-color);">noha</i>
-        <p>excellent </p>
-        <hr>
-        <i class="fa-solid fa-user" style="font-size: 15px;color: var(--main-color);">ramy</i>
-        <p>price and material are great </p> <hr>
-        <i class="fa-solid fa-user" style="font-size: 15px;color: var(--main-color);">hoda</i>
-        <p>acceptable product </p> <hr>
-            <input type="comment" placeholder="enter your comment">
-    </section>
-    
+    <fieldset>
+        <legend>CheckOut</legend>
+        <p>choose a shipping address to continue checking out. you will still have a chance to review 
+            and edit your order before it is final </p> 
+            <div class="links">
+                <a href="../reviews/reviews.html">review</a>
+                <a href="../../Isaac_20210145/Ordered items/index.html">your order</a>
+            </div> <hr>
+            <legend>choose an address:</legend>
+            <input type="radio" id="a1" name="a"> <label for="a1">53 10thDistrict - October City</label> <br>
+            <input type="radio" id="a2" name="a"> <label for="a2">Al Masaken Al Iqtisadeyah, Helwan</label> <hr>
+            <legend>choose a phone number:</legend>
+            <input type="radio" id="p1" name="p"> <label for="p1">01281441143</label>
+            <input type="radio" id="p2" name="p"> <label for="p2">01119697361</label> <hr>
+            <label><h2>order summary</h2></label>
+            <label>Items :</label> <p class="x">EGP 90.00</p> <br>
+            <label>shipping & handling :</label> <p class="x">---</p><hr>
+            <label> order total :</label> <hr>
+            <div class="submit"><a href="../../Basmala_20210223/html pro/pay method.html">Submit</a></div>
+    </fieldset>
     <footer id="footerOne">
         <div class="text">Join Us</div>
         <div class="social">
@@ -67,9 +69,8 @@
         <div class="feedback">
             <a href="../../Aya_20210211/feedback&support/feed.html">feedback & support</a>
         </div> 
-      </footer>
-      <div class="footer" id="footerTwo" style="display: none;">
-                
+    </footer>
+    <div class="footer" id="footerTwo" style="display: none;">               
         <div class="container">
             <div class="cloumn">
                 <div class="footer-col">
@@ -88,6 +89,6 @@
             </div>
         </div>
       </div>
-      <script src="../../Aya_20210203/JS/main.js"></script>
+      <script src="../../Aya_20210203/JS/main.js"></script>    
 </body>
 </html>

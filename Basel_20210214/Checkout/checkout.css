@@ -1,0 +1,51 @@
+body{
+    background-color: var(--light-grey);
+}
+fieldset{
+    margin: auto;
+    width: 25%;
+    background-color: var(--dark-grey);
+    color: var(--main-color);
+    border-color: var(--main-color);
+    margin-bottom: 10px;
+}
+.links {
+    display: flex;
+    justify-content: center;
+}
+.links a {
+    padding: 3px;
+    text-decoration: none;
+    border: 2px solid var(--main-color);
+    background-color: var(--secondary-color);
+    display: inline-block;
+    margin-left: 5px;
+}
+.x{
+    text-align: right;
+}
+label{
+    font-size: medium;
+}
+legend{
+    font-size: large;
+}
+.y{
+    padding: 25px;
+    font-size: large;
+    margin: 30px;
+}
+label{
+    font-size: large;
+}
+.submit {
+    display: flex;
+    justify-content: flex-end;
+}
+.submit a {
+    text-decoration: none;
+    border: 2px solid var(--main-color);
+    display: inline-block;
+    padding: 3px;
+    background-color: var(--secondary-color);
+}
