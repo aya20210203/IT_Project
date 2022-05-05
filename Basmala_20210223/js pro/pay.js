@@ -19,8 +19,8 @@ add.onclick= function () {
 
 }
 cash.onclick= function () {
-    hid.style.display="none"
-    messag.style.display="none"
-    phon.style.display="none"
-
+    hid.style.display="none";
+    messag.style.display="none";
+    phon.style.display="none";
 }
+
