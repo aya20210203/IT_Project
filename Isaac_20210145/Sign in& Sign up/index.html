@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../Aya_20210207/css/theme2.css" >
+    <link rel="stylesheet" href="../../Aya_20210203/CSS/theme1.css" >
+    <title>Sign in&Sign up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="themeOne">
+        <div class="logo">INFINITY&nbsp;STORE</div>
+        <div class="menu" id="menu">
+            <i class="fa-solid fa-bars bar"></i>
+        </div> 
+        <nav>
+            <a href="../../index.html"><i class="fa-solid fa-house"></i>Home Page</a>
+            <a href="../../Aya_20210207/search.html"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+            <a href="../../bassem_20210216/myAccount.html"><i class="fa-solid fa-user"></i>My Account</a>
+            <a href="#"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+            <a href="../../Aya_20210211/Shopping_cart/Cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a>  
+            <a href="../../Aya_20210204/help/help.html"><i class="fa-solid fa-circle-question"></i>Help</a>  
+        </nav>
+    </header>
+    <div class="header" id="themeTwo" style="display: none;">
+                
+        <a href="#" class="logo">Infinity Store</a>
+        <ul class="navigation">
+            <li><a href="../../index.html">Home Page</a></li>
+            <li><a href="../../Aya_20210207/search.html">Search</a></li>
+            <li><a href="../../bassem_20210216/myAccount.html">My Account</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="../../Aya_20210211/Shopping_cart/Cart.html">Cart</a></li>
+            <li><a href="../../Aya_20210204/help/help.html">Help</a></li>
+        </ul>
+    </div>
+    <button id="changeTheme"><i class="fa-solid fa-brush"></i></button>
+    <div class="container2">
+        <form class="form" id="login">
+            <h1 class="form-title">Sign in</h1>
+            <div class="form-message form-message-error"></div>
+            <div class="form-input-group">
+                <input type="text" id="email" class="form-input" autofocus placeholder="Username or email" required>
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" id="password" class="form-input" autofocus placeholder="Password" required>
+                <div class="form-input-error-message"></div>
+            </div>
+            <button class="form-button" id="submit" type="submit">Continue</button>
+            <p class="form-text">
+                <a class="form-link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+        <form class="form form-hidden" id="createAccount">
+            <h1 class="form-title">Sign up</h1>
+            <div class="form-message form-message-error"></div>
+            <div class="form-input-group">
+                <input type="text" id="signupUsername" class="form-input" autofocus placeholder="First name" required>
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="text" id="signupUsername" class="form-input" autofocus placeholder="Last name" required>
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Email Address" required>
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Password" required>
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Confirm password" required>
+                <div class="form-input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit">Continue</button>
+            <p class="form-text">
+                <a class="form-link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+    <footer id="footerOne">
+        <div class="text">Join Us</div>
+        <div class="social">
+            <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a> 
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a> 
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a> 
+        </div>
+        <p>&copy; 2022 <span>INFINITY STORE</span> All Rights Reserved</p> 
+        <div class="feedback">
+            <a href="../../Aya_20210211/feedback&support/feed.html">feedback & support</a>
+        </div> 
+      </footer>
+      <div class="footer" id="footerTwo" style="display: none;">
+                
+        <div class="container">
+            <div class="cloumn">
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>    
+                </div>
+                <div class="footer-bottom">
+                    <p>copyright &copy;2022 infinity store ALL RIGHTS RESERVED</p>
+                    <a href="../../Aya_20210211/feedback&support/feed.html">feedback & support</a>
+                </div>
+                
+            </div>
+        </div>
+      </div>
+    <script src="../../Aya_20210203/JS/main.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

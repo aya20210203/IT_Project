@@ -1,0 +1,9 @@
+body {
+    background-color:lightgray;
+}
+section h2 {
+    color: var(--main-color);
+}
+section {
+    padding: 5px;
+}
