@@ -6,16 +6,11 @@ var removeCartButton = document.getElementsByClassName("buuton");
             var buttonClicked = event.target ;
             buttonClicked.parentElement.parentElement.parentElement.remove();
     
-        var id = buttonClicked.parentElement.parentElement.getAttribute('id');
-        console.log(id);
+        var id = buttonClicked.parentElement.parentElement.parentElement.getAttribute('id');
         var arr = JSON.parse(localStorage.getItem('usercart'));
         var x = arr.indexOf(id);
-        console.log(x);
         arr.splice(x , 1);
         localStorage.setItem('usercart',JSON.stringify(arr));
-        console.log(localStorage.usercart);
-        
-    
         })
     }
 
@@ -32,10 +27,9 @@ var totalProduct1  ;
     if(price.value != ''){
         result =((price.value)*1000*(quantity.value));
         result = Math.round(result);
-        subtotall.innerHTML =(result)+ " EGP" ;
+        subtotall.innerHTML ="EGP " +(result);
         totalProduct1 = result ;
-        console.log(totalProduct1);
-        total.innerHTML=(totalProduct1)+" EGP";
+        total.innerHTML="EGP " +(totalProduct1);
 
     }
     else{
@@ -51,10 +45,9 @@ function subtotal2(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result ) ;
-            subtotall.innerHTML =(result)+ " EGP" ;
+            subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
 
         }
         else{
@@ -70,10 +63,9 @@ function subtotal3(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result);
-            subtotall.innerHTML =(result)+ " EGP" ;
+            subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
         }
         else{
             subtotall.innerHTML ='0.000';
@@ -88,10 +80,9 @@ function subtotal4(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result);
-            subtotall.innerHTML =(result)+ " EGP" ;
+            subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
         }
         else{
             subtotall.innerHTML ='0.000';
@@ -106,10 +97,9 @@ function subtotal5(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result) ;
-            subtotall.innerHTML =(result)+ " EGP" ;
+            subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
         }
         else{
             subtotall.innerHTML ='0.000';
@@ -124,10 +114,9 @@ function subtotal6(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result) ;
-            subtotall.innerHTML =(result)+ " EGP" ;
+            subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
         }
         else{
             subtotall.innerHTML ='0.000';
@@ -142,10 +131,9 @@ function subtotal7(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result) ;
-            subtotall.innerHTML =(result)+ " EGP" ;
+            subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
         }
         else{
             subtotall.innerHTML ='0.000';
@@ -160,10 +148,9 @@ function subtotal8(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result) ;
-            subtotall.innerHTML =(result)+ " EGP" ;
+            subtotall.innerHTML ="EGP " +(result);
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
         }
         else{
             subtotall.innerHTML ='0.000';
@@ -178,10 +165,9 @@ function subtotal9(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result) ;
-            subtotall.innerHTML =(result)+ " EGP" ;
+            subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
         }
         else{
             subtotall.innerHTML ='0.000';
@@ -196,10 +182,9 @@ function subtotal10(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result) ;
-            subtotall.innerHTML =(result)+ " EGP" ;
+            subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
         }
         else{
             subtotall.innerHTML ='0.000';
@@ -214,10 +199,9 @@ function subtotal11(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result) ;
-            subtotall.innerHTML =(result)+ " EGP" ;
+            subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
         }
         else{
             subtotall.innerHTML ='0.000';
@@ -232,10 +216,9 @@ function subtotal12(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result ) ;
-            subtotall.innerHTML =(result)+ " EGP" ;
+            subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
         }
         else{
             subtotall.innerHTML ='0.000';
@@ -250,10 +233,9 @@ function subtotal13(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result );
-            subtotall.innerHTML =(result)+ " EGP" ;
+            subtotall.innerHTML ="EGP " +(result);
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
         }
         else{
             subtotall.innerHTML ='0.000';
@@ -268,10 +250,9 @@ function subtotal14(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result ) ;
-            subtotall.innerHTML =(result)+ " EGP" ;
+            subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
         }
         else{
             subtotall.innerHTML ='0.000';
@@ -286,10 +267,9 @@ function subtotal15(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result) ;
-            subtotall.innerHTML =(result)+ " EGP" ;
+            subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
         }
         else{
             subtotall.innerHTML ='0.000';
@@ -304,10 +284,9 @@ function subtotal16(){
         if(price.value != ''){
             var result =((price.value)*1000*(quantity.value));
             result = Math.round(result ) ;
-            subtotall.innerHTML =(result)+" EGP" ;
+            subtotall.innerHTML ="EGP " +(result) ;
             totalProduct = result ;
-            console.log(totalProduct);
-            total.innerHTML=(totalProduct)+" EGP";
+            total.innerHTML="EGP " +(totalProduct);
         }
         else{
             subtotall.innerHTML ='0.000';
