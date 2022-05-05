@@ -167,12 +167,13 @@ cookie.setDefault({
     address.value=cookie.get("addressC");
 
 //add to cart button
-function addcartbutton(buttonId){
+function addcartbutton(buttonId,productId){
     let button=document.getElementById(buttonId);
     button.onclick=function(){
         if(button.innerHTML=="Add to cart")
         {
             button.innerHTML="Added";
+            addProduct(productId); //aya_20210204 function called from her JS file
         }
         else
         {
@@ -180,23 +181,23 @@ function addcartbutton(buttonId){
         }
     }
 }
-addcartbutton("AddToCart1");
-addcartbutton("AddToCart2");
-addcartbutton("AddToCart3");
-addcartbutton("AddToCart4");
-addcartbutton("AddToCart5");
-addcartbutton("AddToCart6");
-addcartbutton("AddToCart7");
-addcartbutton("AddToCart8");
-addcartbutton("AddToCart9");
-addcartbutton("AddToCart10");
-addcartbutton("AddToCart11");
-addcartbutton("AddToCart12");
-addcartbutton("AddToCart13");
-addcartbutton("AddToCart14");
-addcartbutton("AddToCart15");
-addcartbutton("AddToCart16");
-addcartbutton("AddToCart17");
+// addcartbutton("AddToCart1","");
+addcartbutton("AddToCart2","b1");
+addcartbutton("AddToCart3","b2");
+addcartbutton("AddToCart4","b3");
+addcartbutton("AddToCart5","b4");
+addcartbutton("AddToCart6","b5");
+addcartbutton("AddToCart7","b6");
+addcartbutton("AddToCart8","b7");
+addcartbutton("AddToCart9","b8");
+addcartbutton("AddToCart10","b9");
+addcartbutton("AddToCart11","b10");
+addcartbutton("AddToCart12","b11");
+addcartbutton("AddToCart13","b12");
+addcartbutton("AddToCart14","b13");
+addcartbutton("AddToCart15","b14");
+addcartbutton("AddToCart16","b15");
+addcartbutton("AddToCart17","b16");
 
 //views buttons
 let view1=document.getElementById("view1");

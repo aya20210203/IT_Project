@@ -1,4 +1,4 @@
-.links{
+/* .links{
     margin: 40px;
     text-align: center;
     text-transform: capitalize;
@@ -15,7 +15,7 @@
 .lin:hover{
     text-decoration:underline;
     color:var(--secondary-color);
-}
+} */
 .page{
     margin:65px;
 }
@@ -48,7 +48,7 @@ div.title p{
     padding-left: 8px;
 
 }
-.box{
+/* .box{
     border: 4px solid #c9c9c9;
     width: 330px;
     height: 189px;
@@ -82,7 +82,7 @@ div.title p{
     height: 30px;
     color:black;
 
-}    
+}     */
 .order .squ{
     background-color: var(--third-color);
     border: 3px solid var(--third-color);
@@ -93,4 +93,34 @@ div.title p{
 }
 .order{
     margin: 80px;
+}
+.cancel{
+    background-color: var(--main-color);
+    width: 129px;
+    height: 60px;
+    border-radius: 30px;
+    position: relative;
+    left: 360px;
+    bottom: 400px;
+    text-transform: capitalize;
+}
+.cancel a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.cancel:hover{
+    transform: scale(1.1);
+}
+.map{
+    left: 1000px;
+    position: relative;
+    bottom: 500px;
+}
+.message{
+    position: relative;
+    bottom: 790px;
+    left: 605px;
+    color: var(--main-color);
+    font-weight: bold;
+    text-transform: capitalize;
 }
