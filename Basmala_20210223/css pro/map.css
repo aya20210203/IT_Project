@@ -1,21 +1,4 @@
-/* .links{
-    margin: 40px;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 20px;
-}
-.lin{
-    text-decoration: none;
-    color: var(--third-color);
-    margin: 10px;
-}
-.items{
-    color:var(--third-color);
-}
-.lin:hover{
-    text-decoration:underline;
-    color:var(--secondary-color);
-} */
+
 .page{
     margin:65px;
 }
@@ -48,41 +31,7 @@ div.title p{
     padding-left: 8px;
 
 }
-/* .box{
-    border: 4px solid #c9c9c9;
-    width: 330px;
-    height: 189px;
-    margin: 40px;
-    position: relative;
-    left: 250px;
-    top: 31px;
-    text-transform: capitalize;
-}
-.h{
-    display: block;
-    font-size: 29px;
-    position: relative;
-    left: 15px;
-    padding: 12px;
-}
 
-.blo{
-    display: block;
-    text-decoration: none;
-    margin: 10px;
-    position: relative;
-    left: 20px;
-    padding: 9px;
-    color:  var(--main-color);
-
-}
-.blo:hover{
-    background-color:var(--light-grey);
-    width: 268px;
-    height: 30px;
-    color:black;
-
-}     */
 .order .squ{
     background-color: var(--third-color);
     border: 3px solid var(--third-color);
@@ -104,12 +53,13 @@ div.title p{
     bottom: 400px;
     text-transform: capitalize;
 }
-.cancel a{
+.cancel a{ 
     color: var(--secondary-color);
     text-decoration: none;
 }
 .cancel:hover{
     transform: scale(1.1);
+    box-shadow: 0 5px 15px 15px var(--secondary-color);
 }
 .map{
     left: 1000px;

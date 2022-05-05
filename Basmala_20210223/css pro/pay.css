@@ -106,3 +106,9 @@ button:hover {
     color: var(--secondary-color);
     text-decoration: none;
 }
+#aler_text{
+    color:red;
+}
+.to:focus{
+    border-color: var(--secondary-color);
+}
