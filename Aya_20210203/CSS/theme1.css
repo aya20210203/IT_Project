@@ -77,11 +77,11 @@ header .menu {
     }
     header .menu {
         display: block;
-        position: relative;
         margin-left: 58%;
         cursor: pointer;
-        position: relative;
-        right: 10px;        
+        position: absolute;
+        right: 12%;
+        top: 15px;       
     }
     header .menu i {
         font-size: 40px;
@@ -96,7 +96,6 @@ header .menu {
         position: relative;
         background-color: var(--secondary-color);
         top: 208px;
-        right: 115px;
         align-items: center;
         justify-content: center;
         border-radius: 5%;
